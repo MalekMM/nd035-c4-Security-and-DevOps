@@ -3,8 +3,6 @@ package com.udacity.examples.Testing;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
@@ -23,7 +21,7 @@ public class HelperTest {
         Assert.assertEquals(3, stats.getCount());
         Assert.assertEquals(1, stats.getMin());
         Assert.assertEquals(3, stats.getMax());
-        Assert.assertTrue(2.0 == stats.getAverage());
+        Assert.assertEquals(2.0, stats.getAverage());
         Assert.assertEquals(3, stats.getMax());
     }
 
