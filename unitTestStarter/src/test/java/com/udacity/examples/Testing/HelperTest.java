@@ -21,7 +21,7 @@ public class HelperTest {
         Assert.assertEquals(3, stats.getCount());
         Assert.assertEquals(1, stats.getMin());
         Assert.assertEquals(3, stats.getMax());
-        Assert.assertEquals(2.0, stats.getAverage());
+        Assert.assertTrue(2.0 == stats.getAverage());
         Assert.assertEquals(3, stats.getMax());
     }
 
